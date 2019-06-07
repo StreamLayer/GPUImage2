@@ -10,7 +10,7 @@ public class MovieInput: ImageSource {
     let playAtActualSpeed:Bool
     let loop:Bool
     var videoEncodingIsFinished = false
-    var previousFrameTime = kCMTimeZero
+    var previousFrameTime = CMTime.zero
     var previousActualFrameTime = CFAbsoluteTimeGetCurrent()
 
     var numberOfFramesCaptured = 0
@@ -52,12 +52,10 @@ public class MovieInput: ImageSource {
                     return
                 }
                 
-                var readerVideoTrackOutput:AVAssetReaderOutput? = nil;
+                var readerVideoTrackOutput: AVAssetReaderOutput? = nil;
                 
-                for output in self.assetReader.outputs {
-                    if(output.mediaType == AVMediaType.video.rawValue) {
-                        readerVideoTrackOutput = output;
-                    }
+                for output in self.assetReader.outputs where output.mediaType == AVMediaType.video {
+                  readerVideoTrackOutput = output;
                 }
                 
                 while (self.assetReader.status == .reading) {

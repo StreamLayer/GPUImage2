@@ -120,9 +120,12 @@ public class PictureInput: ImageSource {
         self.init(image:image.cgImage(forProposedRect:nil, context:nil, hints:nil)!, smoothlyScaleOutput:smoothlyScaleOutput, orientation:orientation)
     }
 
-    public convenience init(imageName:String, smoothlyScaleOutput:Bool = false, orientation:ImageOrientation = .portrait) {
-        let imageName = NSImage.Name(rawValue: imageName)
-        guard let image = NSImage(named:imageName) else { fatalError("No such image named: \(imageName) in your application bundle") }
+    public convenience init(imageName:String, smoothlyScaleOutput: Bool = false, orientation:ImageOrientation = .portrait) {
+        let imageName = NSImage.Name(imageName)
+        guard let image = NSImage(named:imageName) else {
+          fatalError("No such image named: \(imageName) in your application bundle")
+        }
+
         self.init(image:image.cgImage(forProposedRect:nil, context:nil, hints:nil)!, smoothlyScaleOutput:smoothlyScaleOutput, orientation:orientation)
     }
 
