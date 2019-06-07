@@ -27,7 +27,7 @@ class ShaderProgram_Tests: XCTestCase {
             XCTAssert(temporaryInputTexture == shaderProgram.uniformIndex("inputImageTexture"), "Could not retrieve the same inputImageTexture uniform")
             XCTAssert(shaderProgram.uniformIndex("garbage") == nil, "Should not have found the garbage uniform")
         } catch {
-            XCTFail("Should not have thrown error during shader compilation: \(error)")
+            XCTFail("Should not have thrown error during shader compilation: \(error.localizedDescription)")
         }
 
         if ((try? ShaderProgram(vertexShader:TestBrokenVertexShader, fragmentShader:TestFragmentShader)) != nil) {

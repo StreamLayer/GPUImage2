@@ -61,8 +61,8 @@ extension ViewController: CameraDelegate {
             return
         }
         if let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) {
-            let attachments = CMCopyDictionaryOfAttachments(kCFAllocatorDefault, sampleBuffer, CMAttachmentMode(kCMAttachmentMode_ShouldPropagate))!
-            let img = CIImage(cvPixelBuffer: pixelBuffer, options: attachments as? [String: AnyObject])
+            let attachments = CMCopyDictionaryOfAttachments(allocator: kCFAllocatorDefault, target: sampleBuffer, attachmentMode: CMAttachmentMode(kCMAttachmentMode_ShouldPropagate))!
+            let img = CIImage(cvPixelBuffer: pixelBuffer, options: convertToOptionalCIImageOptionDictionary(attachments as? [String: AnyObject]))
             var lines = [Line]()
             for feature in (faceDetector?.features(in: img, options: [CIDetectorImageOrientation: 6]))! {
                 if feature is CIFaceFeature {
@@ -96,4 +96,10 @@ extension ViewController: CameraDelegate {
                 .segment(p1:br, p2:bl),   // bottom
                 .segment(p1:bl, p2:tl)]   // left
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalCIImageOptionDictionary(_ input: [String: Any]?) -> [CIImageOption: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (CIImageOption(rawValue: key), value)})
 }
