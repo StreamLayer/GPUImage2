@@ -837,7 +837,7 @@
 		BCFF46FF1CBB0D8900A0C521 /* AverageColor_GL.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = AverageColor_GL.fsh; path = Source/Operations/Shaders/AverageColor_GL.fsh; sourceTree = "<group>"; };
 		BCFF47001CBB0D8900A0C521 /* AverageColor.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = AverageColor.vsh; path = Source/Operations/Shaders/AverageColor.vsh; sourceTree = "<group>"; };
 		BCFF47071CBB443B00A0C521 /* CameraConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraConversion.swift; path = Source/CameraConversion.swift; sourceTree = "<group>"; };
-		D89CC8A522A9EC430048EB48 /* GPUImage_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUImage_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89CC8A522A9EC430048EB48 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1114,7 +1114,7 @@
 				BC6E7CB51C39A9D8006DF678 /* GPUImageTests_macOS.xctest */,
 				BC9E34E91E524A2200B8604F /* GPUImage.framework */,
 				BC9E34F11E524A2200B8604F /* GPUImageTests_iOS.xctest */,
-				D89CC8A522A9EC430048EB48 /* GPUImage_tvOS.framework */,
+				D89CC8A522A9EC430048EB48 /* GPUImage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1466,7 +1466,7 @@
 			);
 			name = GPUImage_tvOS;
 			productName = GPUImage;
-			productReference = D89CC8A522A9EC430048EB48 /* GPUImage_tvOS.framework */;
+			productReference = D89CC8A522A9EC430048EB48 /* GPUImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -2417,7 +2417,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDEBUG -DGLES";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunsetlakesoftware.GPUImage;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GPUImage;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -2449,7 +2449,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DGLES";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunsetlakesoftware.GPUImage;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GPUImage;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
