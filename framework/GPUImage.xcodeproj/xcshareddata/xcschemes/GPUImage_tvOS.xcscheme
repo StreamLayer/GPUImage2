@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D89CC80522A9EC430048EB48"
-               BuildableName = "GPUImage_tvOS.framework"
+               BuildableName = "GPUImage.framework"
                BlueprintName = "GPUImage_tvOS"
                ReferencedContainer = "container:GPUImage.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D89CC80522A9EC430048EB48"
-            BuildableName = "GPUImage_tvOS.framework"
+            BuildableName = "GPUImage.framework"
             BlueprintName = "GPUImage_tvOS"
             ReferencedContainer = "container:GPUImage.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D89CC80522A9EC430048EB48"
-            BuildableName = "GPUImage_tvOS.framework"
+            BuildableName = "GPUImage.framework"
             BlueprintName = "GPUImage_tvOS"
             ReferencedContainer = "container:GPUImage.xcodeproj">
          </BuildableReference>

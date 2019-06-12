@@ -2226,6 +2226,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/GPUImage.xcodeproj/GPUImage_Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				OTHER_SWIFT_FLAGS = "-DGL -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunsetlakesoftware.GPUImage;
 				PRODUCT_NAME = GPUImage;
@@ -2248,6 +2249,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/GPUImage.xcodeproj/GPUImage_Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				OTHER_SWIFT_FLAGS = "-DGL";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunsetlakesoftware.GPUImage;
 				PRODUCT_NAME = GPUImage;
@@ -2303,6 +2305,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				OTHER_SWIFT_FLAGS = "-DDEBUG -DGLES";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunsetlakesoftware.GPUImage;
 				PRODUCT_NAME = GPUImage;
@@ -2334,6 +2337,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				OTHER_SWIFT_FLAGS = "-DGLES";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunsetlakesoftware.GPUImage;
 				PRODUCT_NAME = GPUImage;
@@ -2415,6 +2419,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				OTHER_SWIFT_FLAGS = "-DDEBUG -DGLES";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunsetlakesoftware.GPUImage;
 				PRODUCT_NAME = GPUImage;
@@ -2447,6 +2452,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				OTHER_SWIFT_FLAGS = "-DGLES";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunsetlakesoftware.GPUImage;
 				PRODUCT_NAME = GPUImage;
